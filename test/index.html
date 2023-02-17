@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @media (orientation: landscape) {
+            .payback-poster {
+                height: 50vh;
+            }
+            .payback-div {
+                width: max-content;
+            }
+        }
+        @media (orientation: portrait) {
+            .payback-poster {
+                width: 100%;
+            }
+            .payback-div {
+                width: 90%;
+            }
+        }
+        .live-label {
+            position: absolute;
+            top: 0.2em;
+            left: 0.2em;
+            font-weight: bolder;
+            color: red;
+            font-size: 2em;
+            font-family: monospace;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.2em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="payback-div" style="margin: 0 auto;box-shadow: 0.04em 0.04em 0.4em black;border-radius: 5px;position:relative;">
+        <img class="payback-poster" style="display:block;border-radius: 5px;" src="https://fresheye.co.ke/wp-content/uploads/2023/02/playback.jpeg"/>
+        <h3 style="z-index: 3;position: absolute;top: 2em;text-align: center;left: 0;right: 0;bottom: 2em;display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size:1.3em;
+        justify-content: center;"><a style="text-decoration: none; color: blue;" href="#">Click here to watch Live</a></h3>
+        <div class="live-label">LIVE :</div>
+    </div>
+</body>
+</html>
